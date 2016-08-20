@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- An invisible view aligned to the center of the parent. Allows other
+    views to be arranged on either side -->
+    <View
+        android:id="@+id/centerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        ></View>
+
+    <TextView
+        android:id="@+id/tvFirstChild"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/tvSecondChild"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvFirstChild"
+        android:layout_toLeftOf="@id/centerView"
+        android:background="@color/colorPrimaryDark"
+        />
+    <TextView
+        android:id="@+id/tvThirdChild"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvFirstChild"
+        android:layout_toRightOf="@id/centerView"
+        android:background="#FFFFFF"
+        />
+
+    <TextView
+    android:id="@+id/tvFourthChild"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_toRightOf="@id/centerView"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorAccent"
+    />
+
+    <TextView
+        android:id="@+id/tvFiftChild"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_above="@+id/tvFourthChild"
+
+        />
+
+</RelativeLayout>
